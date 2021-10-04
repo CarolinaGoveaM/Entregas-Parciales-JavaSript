@@ -1,0 +1,32 @@
+// Header
+
+.navbar {
+    background-color: rgb(51, 51, 54);
+  
+    .titulo__header {
+      color: $colortexto;
+      margin-left: 20px;
+    }
+  
+    .titulo__header--index {
+      font-weight: bold;
+    }
+  
+    .parrafo__header--index {
+      font-style: italic;
+    }
+  
+    .link__color {
+      color: $colortexto;
+    }
+  
+    .btn {
+      color: white;
+      background-color: $colortexto;
+    }
+  
+    .btn:hover {
+      background-color: #eee2b2;
+      color: black;
+    }
+  }

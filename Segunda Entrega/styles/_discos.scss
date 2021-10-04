@@ -1,0 +1,81 @@
+// Discos
+
+.titulo__main {
+    text-align: center;
+    border-bottom: 4px double black;
+  
+    .div__botones {
+      text-align: center;
+    }
+  
+    .botonDarkMode {
+      background-color: rgb(31, 30, 30);
+      color: white;
+  
+      .titulo__main {
+        border-bottom: 4px double white;
+      }
+    }
+  
+    #botonDarkMode {
+      margin-top: 1em;
+      color: white;
+      background-color: $colortexto;
+      border-radius: 5px;
+    }
+  
+    #botonDarkMode:hover {
+      background-color: rgb(51, 51, 54);
+    }
+  
+    .boton__mostrarMenu {
+      margin-bottom: 1em;
+      color: white;
+      background-color: $colortexto;
+      border-radius: 5px;
+    }
+  
+    .boton__mostrarMenu:hover {
+      background-color: rgb(51, 51, 54);
+    }
+  
+    #menuAgregar {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .oculto {
+      display: none;
+    }
+  
+    input {
+      transition: 0.5s;
+    }
+  
+    input:hover {
+      transform: scale(1.1, 1.1);
+    }
+  
+    .boton__agregar {
+      margin-top: 1em;
+      color: white;
+      background-color: $colortexto;
+    }
+  
+    .boton__agregar:hover {
+      background-color: rgb(51, 51, 54);
+    }
+  
+    .tarjeta {
+      background-color: $colortexto9154;
+      margin: 1vh;
+      border: 2px solid black;
+      border-radius: 4px;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .tarjeta:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
