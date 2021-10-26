@@ -8,6 +8,10 @@
 .store {
   margin-top: 20px;
 
+  .item:hover{
+    transform: scale(1.1, 1.1);
+  }
+
   .item-title {
     text-align: center;
     font-weight: bold;

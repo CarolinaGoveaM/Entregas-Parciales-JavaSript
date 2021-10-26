@@ -3,99 +3,167 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Architects Daughter", cursive;
-  background-color: #eee2b2; }
+  background-color: #eee2b2;
+}
 
 .navbar {
-  background-color: #333336; }
-  .navbar .titulo__header {
-    color: #b19154;
-    margin-left: 20px; }
-  .navbar .titulo__header--index {
-    font-weight: bold; }
-  .navbar .parrafo__header--index {
-    font-style: italic; }
-  .navbar .link__color {
-    color: #b19154; }
+  background-color: #333336;
+}
+
+.navbar .titulo__header {
+  color: #b19154;
+  margin-left: 20px;
+}
+
+.navbar .titulo__header--index {
+  font-weight: bold;
+}
+.navbar .parrafo__header--index {
+  font-style: italic;
+}
+
+.navbar .link__color {
+  color: #b19154;
+}
 
 .img_index {
   width: 100%;
-  height: 50vh; }
+  height: 50vh;
+}
 
-.titleIndex {
+section .titleIndex {
   text-align: center;
-  background-color: #b19154;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
-.linkIndex {
+section .linkIndex {
   list-style-type: none;
   color: black;
   display: block;
   text-align: center;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
-.linkIndex:hover {
+section .linkIndex:hover {
   background-color: #333336;
-  color: white; }
+  color: white;
+}
+
+section .titleNovedades {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+section .parrafoNovedades {
+  font-weight: bold;
+  text-align: center;
+}
+
+section .botonNovedades {
+  text-align: center;
+}
+
+section #botonNovedades {
+  background-color: #b19154;
+  color: black;
+  font-weight: bold;
+}
+
+section #botonNovedades:hover {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}
+
+.table {
+  font-weight: bold;
+}
 
 .titulo__main {
   text-align: center;
-  margin-top: 15px; }
+  margin-top: 15px;
+}
 
 .store {
-  margin-top: 20px; }
-  .store .item-title {
-    text-align: center;
-    font-weight: bold; }
-  .store .itemCantante {
-    text-align: center; }
-  .store .item-price {
-    text-align: center;
-    font-weight: bold; }
-  .store p {
-    text-align: center;
-    border-bottom: 1px solid black;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.5em; }
+  margin-top: 20px;
+}
+
+.store .item:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.store .item-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.store .itemCantante {
+  text-align: center;
+}
+
+.store .item-price {
+  text-align: center;
+  font-weight: bold;
+}
+
+.store p {
+  text-align: center;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.5em;
+}
 
 .shopping-cart h6 {
   font-weight: bold;
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid black;
+}
 
 .shopping-cart .shoppingCartTotal {
   font-weight: bold;
-  border-bottom: 2px solid black; }
+  border-bottom: 2px solid black;
+}
 
 .shopping-cart-item-title {
   font-weight: bold;
-  margin-left: 15px; }
+  margin-left: 15px;
+}
 
 .item-button {
   background-color: black;
   color: #b19154;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 .item-button:hover {
   background-color: #b19154;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .bottonContainer {
-  text-align: center; }
+  text-align: center;
+}
 
 .buttonComprar {
   margin-left: 10px;
   background-color: black;
-  color: #b19154; }
+  color: #b19154;
+}
 
 .buttonComprar:hover {
   background-color: #b19154;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .buttonDelete {
-  background-color: black; }
+  background-color: black;
+}
 
 .buttonDelete:hover {
-  background-color: #b19154; }
+  background-color: #b19154;
+}
 
 footer {
-  background-color: #333336; }
+  background-color: #333336;
+}

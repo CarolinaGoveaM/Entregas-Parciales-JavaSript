@@ -18,7 +18,7 @@
     <!-- LINK CSS -->
     <link rel="stylesheet" href="styles/styles.css">
 
-    <title>Segunda Entrega</title>
+    <title>Disquera DC</title>
 </head>
 
 <body>
@@ -55,16 +55,48 @@
         </nav>
     </header>
 
+    <!-- IMAGEN  INDEX -->
     <div>
         <div>
             <img src="assets/img/img_index.jpg" alt="" class="img_index">
         </div>
     </div>
 
-
+    <!-- CONTENIDO -->
     <section>
         <h2 class="titleIndex">Hace click, y encontrá tu disco favorito :D</h2>
         <a class="linkIndex" href="pages/discos.html">Ver Discos</a>
+    </section>
+
+    <!-- TABLA -->
+    <section>
+        <h3 class="titleNovedades">Novedades!!</h3>
+        <p class="parrafoNovedades">Acá podes ver los nuevos ingresos que tendremos, para que no te pierdas de nada xD
+        </p>
+        <div class="botonNovedades">
+            <button class="btn w-50" id="botonNovedades">Novedades</button>
+        </div>
+
+        <div class="mt-5">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Cantante</th>
+                        <th scope="col">Disco</th>
+                        <th scope="col">Fecha de Ingreso</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaNovedades">
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
     <!-- LINK BOOSTRAP -->
@@ -75,6 +107,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
+
+    <!-- LINK JS -->
+    <script src="js/ajax.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

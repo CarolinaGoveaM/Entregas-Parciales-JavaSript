@@ -1,17 +1,17 @@
 // INDEX
 
 .img_index {
-    width: 100%;
-    height: 50vh;
-  }
+  width: 100%;
+  height: 50vh;
+}
 
-  .titleIndex{
+section {
+  .titleIndex {
     text-align: center;
-    background-color: $colortexto;
     margin-top: 10px;
   }
 
-  .linkIndex{
+  .linkIndex {
     list-style-type: none;
     color: black;
     display: block;
@@ -19,7 +19,41 @@
     font-size: 1.5em;
   }
 
-  .linkIndex:hover{
+  .linkIndex:hover {
     background-color: rgb(51, 51, 54);
     color: white;
   }
+}
+
+section {
+  .titleNovedades {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .parrafoNovedades {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .botonNovedades {
+    text-align: center;
+  }
+
+  #botonNovedades {
+    background-color: $colortexto;
+    color: black;
+    font-weight: bold;
+  }
+
+  #botonNovedades:hover {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+.table {
+  font-weight: bold;
+}

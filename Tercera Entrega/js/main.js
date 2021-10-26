@@ -1,15 +1,18 @@
 const addToShoppingCartButtons = document.querySelectorAll('.agregarAlCarrito');
+
 addToShoppingCartButtons.forEach((agregarAlCarritoButton) => {
   agregarAlCarritoButton.addEventListener('click', agregarAlCarritoClicked);
 });
 
 const buttonComprar = document.querySelector('.buttonComprar');
+
 buttonComprar.addEventListener('click', buttonComprarClicked);
 
 const cartItemsContainer = document.querySelector(
   '.cartItemsContainer'
 );
 
+// AGREGAR AL CARRITO
 function agregarAlCarritoClicked(event) {
   const button = event.target;
   const item = button.closest('.item');
@@ -18,8 +21,12 @@ function agregarAlCarritoClicked(event) {
   const itemPrice = item.querySelector('.item-price').textContent;
   const itemImage = item.querySelector('.item-image').src;
 
+  // LOCAL STORAGE
+  saveToLocalStorage(itemTitle, {itemPrice: itemPrice, itemImage: itemImage, itemAmount: 1});
+
   addItemToShoppingCart(itemTitle, itemPrice, itemImage);
 }
+
 
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   const elementsTitle = cartItemsContainer.getElementsByClassName(
@@ -39,6 +46,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
     }
   }
 
+  // AGREGAR AL HTML
   const shoppingCartRow = document.createElement('div');
   const shoppingCartContent = `
   <div class="row shoppingCartItem">
@@ -62,6 +70,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
             </div>
         </div>
     </div>`;
+    
   shoppingCartRow.innerHTML = shoppingCartContent;
   cartItemsContainer.append(shoppingCartRow);
 
@@ -86,17 +95,22 @@ function updateShoppingCartTotal() {
     const shoppingCartItemPriceElement = shoppingCartItem.querySelector(
       '.shoppingCartItemPrice'
     );
+
     const shoppingCartItemPrice = Number(
       shoppingCartItemPriceElement.textContent.replace('$', '')
     );
+
     const cartItemQuantityElement = shoppingCartItem.querySelector(
       '.cartItemQuantity'
     );
+
     const cartItemQuantity = Number(
       cartItemQuantityElement.value
     );
+
     total = total + shoppingCartItemPrice * cartItemQuantity;
   });
+  
   shoppingCartTotal.innerHTML = `${total.toFixed(2)}$`;
 }
 
