@@ -1,0 +1,87 @@
+// DISCOS
+
+.titulo__main {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.store {
+  margin-top: 20px;
+
+  .item:hover{
+    transform: scale(1.1, 1.1);
+  }
+
+  .item-title {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .itemCantante {
+    text-align: center;
+  }
+
+  .item-price {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  p {
+    text-align: center;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
+
+.shopping-cart {
+  h6 {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+  }
+
+  .shoppingCartTotal {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+  }
+}
+
+.shopping-cart-item-title {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.item-button {
+  background-color: black;
+  color: $colortexto;
+  margin-bottom: 10px;
+}
+
+.item-button:hover {
+  background-color: $colortexto;
+  font-weight: bold;
+}
+
+.bottonContainer {
+  text-align: center;
+}
+
+.buttonComprar {
+  margin-left: 10px;
+  background-color: black;
+  color: $colortexto;
+}
+
+.buttonComprar:hover {
+  background-color: $colortexto;
+  font-weight: bold;
+}
+
+.buttonDelete {
+  background-color: black;
+}
+
+.buttonDelete:hover {
+  background-color: $colortexto;
+}
