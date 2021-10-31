@@ -27,7 +27,7 @@ function agregarAlCarritoClicked(event) {
   addItemToShoppingCart(itemTitle, itemPrice, itemImage);
 }
 
-
+// AGREGAR ITEMS AL CARRITO
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   const elementsTitle = cartItemsContainer.getElementsByClassName(
     'cartItemTitle'
@@ -85,6 +85,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   updateShoppingCartTotal();
 }
 
+// ACTUALIZAR CARRITO
 function updateShoppingCartTotal() {
   let total = 0;
   const shoppingCartTotal = document.querySelector('.shoppingCartTotal');

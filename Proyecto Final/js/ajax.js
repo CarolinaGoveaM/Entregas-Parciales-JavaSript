@@ -15,7 +15,7 @@ function traer (){
 function tabla(datos){
     tablaNovedades.innerHTML = '';
     for(let product of datos){
-        tablaNovedades.innerHTML += `^
+        tablaNovedades.innerHTML += `
         <tr>
                     <th scope="row">${product.id}</th>
                     <td>${product.name}</td>
@@ -26,7 +26,6 @@ function tabla(datos){
     }
 }
 
-
-
-
-
+$("#botonNovedades").click(() => { 
+    $("#tablaNovedades").toggle("slow");
+});

@@ -1,10 +1,10 @@
 // HEADER
 
 .navbar {
-    background-color: rgb(51, 51, 54);
+    background-color: #002027;
   
     .titulo__header {
-      color: $colortexto;
+      color: $colorprincipal;
       margin-left: 20px;
     }
   
@@ -17,6 +17,10 @@
     }
   
     .link__color {
-      color: $colortexto;
+      color: $colorprincipal;
     }
   }
+  
+hr{
+    color: $colorprincipal;
+}

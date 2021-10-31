@@ -7,33 +7,34 @@
 
 section {
   .titleIndex {
+    color: $colorprincipal;
     text-align: center;
     margin-top: 10px;
   }
 
   .linkIndex {
     list-style-type: none;
-    color: black;
+    color: $colorprincipal;
     display: block;
     text-align: center;
     font-size: 1.5em;
   }
 
   .linkIndex:hover {
-    background-color: rgb(51, 51, 54);
     color: white;
   }
 }
 
 section {
   .titleNovedades {
+    color: $colorprincipal;
     margin-top: 15px;
     text-align: center;
     font-weight: bold;
   }
 
   .parrafoNovedades {
-    font-weight: bold;
+    color: $colorprincipal;
     text-align: center;
   }
 
@@ -42,18 +43,35 @@ section {
   }
 
   #botonNovedades {
-    background-color: $colortexto;
-    color: black;
-    font-weight: bold;
-  }
-
-  #botonNovedades:hover {
     background-color: black;
     font-weight: bold;
     color: white;
   }
+
+  #botonNovedades:hover {
+    background-color: $colorprincipal;
+    color: black;
+    font-weight: bold;
+  }
 }
 
 .table {
+  color: $colorprincipal;
   font-weight: bold;
+}
+
+.modal-content{
+  background-color: $colorprincipal;
+  font-weight: bold;
+
+  .btn{
+    background-color: black;
+    color: white;
+  }
+
+  .btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
 }
