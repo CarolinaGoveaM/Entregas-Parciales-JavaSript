@@ -22,7 +22,7 @@ function agregarAlCarritoClicked(event) {
   const itemImage = item.querySelector('.item-image').src;
 
   // LOCAL STORAGE
-  saveToLocalStorage(itemTitle, {itemPrice: itemPrice, itemImage: itemImage, itemAmount: 1});
+  saveToLocalStorage("cart", { itemTitle: itemTitle, itemPrice: itemPrice, itemImage: itemImage, itemAmount: 1 });
 
   addItemToShoppingCart(itemTitle, itemPrice, itemImage);
 }
@@ -70,7 +70,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
             </div>
         </div>
     </div>`;
-    
+
   shoppingCartRow.innerHTML = shoppingCartContent;
   cartItemsContainer.append(shoppingCartRow);
 
@@ -111,7 +111,7 @@ function updateShoppingCartTotal() {
 
     total = total + shoppingCartItemPrice * cartItemQuantity;
   });
-  
+
   shoppingCartTotal.innerHTML = `${total.toFixed(2)}$`;
 }
 

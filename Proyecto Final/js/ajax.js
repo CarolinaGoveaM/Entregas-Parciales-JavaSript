@@ -4,28 +4,24 @@ let contenido = document.querySelector('#tablaNovedades');
 
 botonNovedades.addEventListener('click', traer);
 
-function traer (){
+function traer() {
     fetch('../data/tabla.json')
-    .then( res => res.json())
-    .then( datos => {
-        tabla(datos);
-    })
+        .then(res => res.json())
+        .then(datos => {
+            tabla(datos);
+        })
 }
 
-function tabla(datos){
+function tabla(datos) {
     tablaNovedades.innerHTML = '';
-    for(let product of datos){
+    for (let product of datos) {
         tablaNovedades.innerHTML += `
         <tr>
                     <th scope="row">${product.id}</th>
                     <td>${product.name}</td>
                     <td>${product.title}</td>
-                    <td>${product.status ? "Ingresando" : "Demorado" }</td>
+                    <td>${product.status ? "Ingresando" : "Demorado"}</td>
                   </tr>
         `
     }
 }
-
-$("#botonNovedades").click(() => { 
-    $("#tablaNovedades").toggle("slow");
-});
